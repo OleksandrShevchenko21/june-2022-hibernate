@@ -2,14 +2,6 @@ package model;
 
 import lombok.*;
 
-//    annotate the class as an entity and map to db table
-//    define the fields
-//    annotate the fields with db columns names
-//** set up mapping to model.InstructorDetail entity
-//    create constructors
-//    generate getter/setters methods
-//    generate to String() methods
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

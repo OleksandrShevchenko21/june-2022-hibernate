@@ -1,10 +1,4 @@
 package model;
-//    annotate the class as an entity and map to db table
-//    define the fields
-//    annotate the fields with db columns names
-//    create constructors
-//    generate getter/setters methods
-//    generate to String() methods
 
 import lombok.*;
 

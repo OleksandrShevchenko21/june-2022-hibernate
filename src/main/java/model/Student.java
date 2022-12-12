@@ -30,4 +30,8 @@ public class Student {
     public Student(String firstName) {
         this.firstName = firstName;
     }
+
+    public Student() {
+
+    }
 }
