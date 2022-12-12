@@ -3,6 +3,8 @@ package model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -29,11 +31,35 @@ public class Course {
     )
     private Instructor instructor;
 
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "course_review",
+            joinColumns = @JoinColumn(name = "course_id"),
+            inverseJoinColumns = @JoinColumn(name = "review_id")
+    )
+    private List<Review> review;
+
+
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "course_student",
+            joinColumns = @JoinColumn(name = "course_id"),
+            inverseJoinColumns = @JoinColumn(name = "student_id")
+    )
+    private List<Student> students;
+
     public Course(String courseTitle) {
         this.courseTitle = courseTitle;
     }
 
-//    public Course(String courseTitle, Instructor instructor) {
+    public Course(String courseTitle, List<Review> review, List<Student> students) {
+        this.courseTitle = courseTitle;
+        this.review = review;
+        this.students = students;
+    }
+
+
+    //    public Course(String courseTitle, Instructor instructor) {
 //        this.courseTitle = courseTitle;
 //        this.instructor = instructor;
 //    }

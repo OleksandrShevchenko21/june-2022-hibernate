@@ -49,6 +49,8 @@ public class Instructor {
     )
     private List<Course>courses;
 
+
+
     public Instructor(String name, String surname, InstructorDetail instructorDetail) {
         this.name = name;
         this.surname = surname;
@@ -61,7 +63,8 @@ public class Instructor {
         this.courses = courses;
     }
 
-//    public void add (Course tempCourse){
+
+    //    public void add (Course tempCourse){
 //        if(courses == null){
 //            courses = new ArrayList<>();
 //
