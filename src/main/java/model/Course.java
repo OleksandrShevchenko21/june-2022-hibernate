@@ -58,9 +58,4 @@ public class Course {
         this.students = students;
     }
 
-
-    //    public Course(String courseTitle, Instructor instructor) {
-//        this.courseTitle = courseTitle;
-//        this.instructor = instructor;
-//    }
 }

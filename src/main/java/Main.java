@@ -95,7 +95,7 @@ public class Main {
         session.getTransaction().commit();
 
 
-        /*end dont forget*/
+
         session.close();
         sessionFactory.close();
 

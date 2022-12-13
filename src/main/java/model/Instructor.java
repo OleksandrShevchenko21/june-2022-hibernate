@@ -56,14 +56,4 @@ public class Instructor {
     }
 
 
-    //    public void add (Course tempCourse){
-//        if(courses == null){
-//            courses = new ArrayList<>();
-//
-//            courses.add(tempCourse);
-//            tempCourse.setInstructor(this);
-//        }
-//    }
-
-
 }
